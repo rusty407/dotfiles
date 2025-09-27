@@ -135,7 +135,7 @@ Fast fuzzy finding powered by `plenary.nvim`.
 
 | Key        | Action     |
 | ---------- | ---------- |
-| <leader>ff | Find files |
+| "leader"ff | Find files |
 
 You can also add more Telescope pickers like:
 

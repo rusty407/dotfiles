@@ -47,9 +47,6 @@ It uses **lazy.nvim** for plugin management, and includes modern tools like LSP,
 ├── telescope.lua
 └── treesitter.lua
 
-yaml
-Copy code
-
 ---
 
 ## 🚀 Installation

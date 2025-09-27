@@ -35,17 +35,17 @@ It uses **lazy.nvim** for plugin management, and includes modern tools like LSP,
 .
 ├── init.lua
 ├── lazy-lock.json
-└── lua/
-├── config/
-│ └── lazy.lua
-├── plugins.lua
-└── plugins/
-├── colorscheme.lua
-├── harpoon.lua
-├── lsp.lua
-├── plenary.lua
-├── telescope.lua
-└── treesitter.lua
+└── lua
+    ├── config
+    │   └── lazy.lua
+    ├── plugins.lua
+    └── plugins
+        ├── colorscheme.lua
+        ├── harpoon.lua
+        ├── lsp.lua
+        ├── plenary.lua
+        ├── telescope.lua
+        └── treesitter.lua
 
 ---
 

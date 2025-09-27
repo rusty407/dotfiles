@@ -56,13 +56,13 @@ It uses **lazy.nvim** for plugin management, and includes modern tools like LSP,
 ```bash
 git clone https://github.com/rusty407/dotfiles ~/.config/nvim
 nvim
-Then inside Neovim:
+Then inside Neovim, run:
 
 vim
 Copy code
 :Lazy sync
 Restart Neovim and you're good to go ✅
-
+```
 🧠 LSP & Autocompletion
 Using lsp-zero (v3) with nvim-cmp and luasnip:
 
@@ -98,7 +98,6 @@ Key	Action
 <C-s>	Jump to file 4
 
 To remove a file:
-
 Open the quick menu (<C-e>) and press d
 
 🔍 Telescope
@@ -116,7 +115,7 @@ buffers
 
 help_tags
 
-Example:
+Example usage:
 
 lua
 Copy code
@@ -131,6 +130,5 @@ Run plugin updates with:
 vim
 Copy code
 :Lazy update
-
 📄 License
 MIT — use it, break it, fork it, share it.

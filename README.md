@@ -51,84 +51,122 @@ It uses **lazy.nvim** for plugin management, and includes modern tools like LSP,
 
 ---
 
+---
+
+````md
 ## 🚀 Installation
+
+1. Clone the repository to your Neovim config directory:
 
 ```bash
 git clone https://github.com/rusty407/dotfiles ~/.config/nvim
+````
+
+2. Open Neovim:
+
+```bash
 nvim
-Then inside Neovim, run:
-
-vim
-Copy code
-:Lazy sync
-Restart Neovim and you're good to go ✅
 ```
-🧠 LSP & Autocompletion
-Using lsp-zero (v3) with nvim-cmp and luasnip:
 
-🔑 Keymaps (LSP)
-Mode	Key	Action
-n	gd	Go to definition
-n	K	Hover info
-n	<leader>vws	Workspace symbols
-n	<leader>vd	Diagnostic float
-n	[d / ]d	Prev / Next diagnostic
-n	<leader>vca	Code action
-n	<leader>vrr	List references
-n	<leader>vrn	Rename symbol
-i	<C-h>	Signature help
+3. Inside Neovim, run the following command to install all plugins:
 
-⚙️ Completion (nvim-cmp)
-Mode	Key	Action
-i	<C-k>	Select previous suggestion
-i	<C-j>	Select next suggestion
-i	<C-Space>	Trigger completion menu
-i	<CR>	Confirm selection
+```vim
+:Lazy sync
+```
 
-🧭 Harpoon
+4. Restart Neovim, and you're ready to go! ✅
+
+---
+
+## 🧠 LSP & Autocompletion
+
+This config uses `lsp-zero` (v3) with `nvim-cmp` and `luasnip` for seamless language server support and completion.
+
+### 🔑 Keymaps (LSP)
+
+| Mode | Key         | Action               |
+| ---- | ----------- | -------------------- |
+| n    | gd          | Go to definition     |
+| n    | K           | Hover info           |
+| n    | <leader>vws | Workspace symbols    |
+| n    | <leader>vd  | Show diagnostics     |
+| n    | [d / ]d     | Navigate diagnostics |
+| n    | <leader>vca | Code action          |
+| n    | <leader>vrr | List references      |
+| n    | <leader>vrn | Rename symbol        |
+| i    | <C-h>       | Signature help       |
+
+### ⚙️ Completion (nvim-cmp)
+
+| Mode | Key       | Action                  |
+| ---- | --------- | ----------------------- |
+| i    | <C-k>     | Select previous item    |
+| i    | <C-j>     | Select next item        |
+| i    | <C-Space> | Trigger completion menu |
+| i    | <CR>      | Confirm selection       |
+
+---
+
+## 🧭 Harpoon
+
 A fast file jumper by ThePrimeagen.
 
-🔑 Keymaps
-Key	Action
-<leader>a	Add current file to Harpoon
-<C-e>	Toggle Harpoon quick menu
-<C-h>	Jump to file 1
-<C-t>	Jump to file 2
-<C-n>	Jump to file 3
-<C-s>	Jump to file 4
+### 🔑 Keymaps
 
-To remove a file:
-Open the quick menu (<C-e>) and press d
+| Key       | Action                      |
+| --------- | --------------------------- |
+| <leader>a | Add current file to Harpoon |
+| <C-e>     | Toggle Harpoon quick menu   |
+| <C-h>     | Jump to file 1              |
+| <C-t>     | Jump to file 2              |
+| <C-n>     | Jump to file 3              |
+| <C-s>     | Jump to file 4              |
 
-🔍 Telescope
-Fast fuzzy finding powered by plenary.nvim.
+**To remove a file:**
+Open the quick menu with `<C-e>`, then press `d` on the file you want to remove.
 
-🔑 Keymaps
-Key	Action
-<leader>ff	Find files
+---
 
-You can add more Telescope pickers like:
+## 🔍 Telescope
 
-live_grep
+Fast fuzzy finding powered by `plenary.nvim`.
 
-buffers
+### 🔑 Keymaps
 
-help_tags
+| Key        | Action     |
+| ---------- | ---------- |
+| <leader>ff | Find files |
+
+You can also add more Telescope pickers like:
+
+* `live_grep`
+* `buffers`
+* `help_tags`
 
 Example usage:
 
-lua
-Copy code
+```lua
 vim.keymap.set("n", "<leader>fg", function()
   require("telescope.builtin").live_grep()
 end)
-🛠 Plugin Management with lazy.nvim
-All plugins are declared in lua/plugins.lua, and plugin-specific configs live in lua/plugins/.
+```
+
+---
+
+## 🛠 Plugin Management with lazy.nvim
+
+All plugins are declared in `lua/plugins.lua`, with plugin-specific configs inside the `lua/plugins/` folder.
 
 Run plugin updates with:
 
-vim
-Copy code
+```vim
 :Lazy update
-📄 License
+```
+
+---
+
+## 📄 License
+
 MIT — use it, break it, fork it, share it.
+
+```

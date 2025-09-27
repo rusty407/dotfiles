@@ -168,5 +168,3 @@ Run plugin updates with:
 ## 📄 License
 
 MIT — use it, break it, fork it, share it.
-
-```

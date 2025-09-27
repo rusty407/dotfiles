@@ -48,6 +48,7 @@ It uses **lazy.nvim** for plugin management, and includes modern tools like LSP,
         ├── telescope.lua
         └── treesitter.lua
 ```
+
 ---
 
 ## 🚀 Installation
@@ -130,16 +131,6 @@ Run plugin updates with:
 vim
 Copy code
 :Lazy update
-🔄 Syncing Changes
-When you change your config, run:
-
-bash
-Copy code
-git add .
-git commit -m "Update config"
-git push
-🖼 Screenshots (Optional)
-You can add screenshots of your Neovim setup here for showcase ✨
 
 📄 License
 MIT — use it, break it, fork it, share it.

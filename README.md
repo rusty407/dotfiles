@@ -88,22 +88,22 @@ This config uses `lsp-zero` (v3) with `nvim-cmp` and `luasnip` for seamless lang
 | ---- | ----------- | -------------------- |
 | n    | gd          | Go to definition     |
 | n    | K           | Hover info           |
-| n    | <leader>vws | Workspace symbols    |
-| n    | <leader>vd  | Show diagnostics     |
+| n    | "leader"vws | Workspace symbols    |
+| n    | "leader"vd  | Show diagnostics     |
 | n    | [d / ]d     | Navigate diagnostics |
-| n    | <leader>vca | Code action          |
-| n    | <leader>vrr | List references      |
-| n    | <leader>vrn | Rename symbol        |
-| i    | <C-h>       | Signature help       |
+| n    | "leader"vca | Code action          |
+| n    | "leader"vrr | List references      |
+| n    | "leader"vrn | Rename symbol        |
+| i    | "C-h"       | Signature help       |
 
 ### ⚙️ Completion (nvim-cmp)
 
 | Mode | Key       | Action                  |
 | ---- | --------- | ----------------------- |
-| i    | <C-k>     | Select previous item    |
-| i    | <C-j>     | Select next item        |
-| i    | <C-Space> | Trigger completion menu |
-| i    | <CR>      | Confirm selection       |
+| i    | "C-k"     | Select previous item    |
+| i    | "C-j"     | Select next item        |
+| i    | "C-Space" | Trigger completion menu |
+| i    | "CR"      | Confirm selection       |
 
 ---
 
@@ -115,12 +115,12 @@ A fast file jumper by ThePrimeagen.
 
 | Key       | Action                      |
 | --------- | --------------------------- |
-| <leader>a | Add current file to Harpoon |
-| <C-e>     | Toggle Harpoon quick menu   |
-| <C-h>     | Jump to file 1              |
-| <C-t>     | Jump to file 2              |
-| <C-n>     | Jump to file 3              |
-| <C-s>     | Jump to file 4              |
+| (leader)a | Add current file to Harpoon |
+| "C-e"     | Toggle Harpoon quick menu   |
+| "C-h"     | Jump to file 1              |
+| "C-t"     | Jump to file 2              |
+| "C-n"     | Jump to file 3              |
+| "C-s"     | Jump to file 4              |
 
 **To remove a file:**
 Open the quick menu with `<C-e>`, then press `d` on the file you want to remove.
